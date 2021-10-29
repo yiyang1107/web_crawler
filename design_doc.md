@@ -1,12 +1,17 @@
 # Web Crawler Design Doc
 
-##Load Estimation
+## Load Estimation 
+100,000,000 / 24H / 3600S ~ 1000 page/s
 
-##Restrictions
+## Restrictions  
+10 low power server, 20-50 threads per crawler
+2 power server, 3 cores
+on average one thread download at least 5 pages per second.
 
-##Design
+## Design  
 
-###Distributed Web Crawler
+### Distributed Web Crawler  
+
 ![wc](wc.png)
 
 1. URL Feeds
